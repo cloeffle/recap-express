@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
-const { protectedRoute } = require('./middlewares/protectedRoute');
-const logger = require('./middlewares/logger');
+
 const morgan = require('morgan');
+
+const logger = require('./middlewares/logger');
+const { protectedRoute } = require('./middlewares/protectedRoute');
 
 app.use(express.json());
 

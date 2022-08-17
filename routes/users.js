@@ -1,7 +1,6 @@
 const express = require('express');
 const { protectedRoute } = require('../middlewares/protectedRoute');
 const router = express.Router();
-const { logger } = require('../middlewares/logger');
 const { sendUser, createUser } = require('../controller/users');
 
 // router.use(protectedRoute);
