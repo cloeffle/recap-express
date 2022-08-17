@@ -1,0 +1,33 @@
+### Rest Client - by Huachao Mao - VSCode Extension
+
+@host = http://localhost:8000
+
+### Request 1
+GET {{host}}
+
+
+### Request 2
+GET {{host}}/users
+
+### Request 3
+POST {{host}}/users
+Content-Type: application/json
+
+{
+    "username": "Jane",
+    "password": "12345",
+    "secret": "octopus"
+}
+
+### Request 4
+PUT {{host}}/users/33
+Content-Type: application/json
+
+{
+    "username": "Jane",
+    "password": "12345",
+    "secret": "octopus"
+}
+
+### Request 5
+DELETE {{host}}/users/22
